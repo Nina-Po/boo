@@ -1,0 +1,143 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(22, 28%, 21%);
+  --clr-primary-2: hsl(22, 28%, 29%);
+  --clr-primary-3: hsl(22, 28%, 37%);
+  --clr-primary-4: hsl(22, 28%, 45%);
+  /* primary/main color */
+  --clr-primary-5: hsl(22, 31%, 52%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(22, 31%, 60%);
+  --clr-primary-7: hsl(22, 31%, 67%);
+  --clr-primary-8: hsl(20, 31%, 74%);
+  --clr-primary-9: hsl(22, 31%, 81%);
+  --clr-primary-10: hsl(22, 31%, 88%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.7s linear;
+  --transition2: 0.7s;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+
+  --purple-1: #ffa3ff;
+  --purple-2: #ffdfff;
+  --purple-3: #ffa3ff;
+  --purple-4: #ff00ff;
+
+  --gray-2: #17132a;
+
+  --lilac-1: #cdb1f9;
+  --lilac-2: #883cff;
+
+  --main-0: #6b2351;
+  --main-1: #b86499;
+  --main-2: #b88aa8;
+
+  --blue-0: #2266ba;
+  --blue-05: #6ba2c0;
+  --blue-1: #3894c4;
+  --blue-2: #3894c4;
+  --blue-3: #c0e4ec;
+  --green-1: #75bd2d;
+  --green-2: #75bd2d;
+  --purple-1: #f5386e;
+  --purple-2: #da1c4b;
+  --gray-1: #ededed;
+
+  --red-1-: #e93a51;
+
+  --gray-border: #b1b1b1;
+  --gray-background: #ebebeb;
+  --gray-background-2: #d9d9d9;
+
+  --gray-dark: #696969;
+  --gray-dark-2: #3e3e3e;
+  --blue-1: #48bbde;
+  --purple-1: #b98cf2;
+
+  --backgroun-1: #f4f3e8;
+  --backgroun-2: #cdc9ba;
+  --border-1: #5c4838;
+  --brown-1: rgb(107, 75, 33);
+
+  --shadow-white-1: rgba(255, 255, 255, 0.56) 0px 10px 26px 0px,
+    rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body {
+  /* background: linear-gradient(to bottom right, #f9f8f3, #d2cbb8); */
+  /* background: radial-gradient(circle, #94dce7, #86a5cf); */
+  /* background-size: 200% 200%; */
+  /* animation: gradientAnimation 60s ease infinite; */
+  background: #1d5aa4;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  border-top: 1px solid var(--clr-grey-8);
+}
+p {
+  color: #293448;
+}
